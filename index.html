@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>It-incubator precourse</title>
 </head>
 
-<body>
-
-
-  <header>
-    <span>IT-INCUBATOR</span>
+<body data-cy="hw2-body">
+  <header data-cy="hw2-header">
+    <span data-cy="hw2-header-span">IT-INCUBATOR</span>
   </header>
 
-  <section class="main-section" data-cy="hw1-section-main-pre">
-    <h1 class="main-title">Федосеева Елизавета Леонидовна</h1>
-    <p class="main-text">Учусь в IT-INCUBATOR, люблю играть в видеоигры и очень люблю свою кошку.Её зовут Афроня,её фото будет ниже</p>
-    <img class="main-image" src="assets/img/Afronya.jpg" alt="cat" >
+  <section class="main-section" data-cy="hw2-section-main-pre">
+    <h1 class="main-title" data-cy="hw2-main-title">Федосеева Елизавета Леонидовна</h1>
+    <p class="main-text" data-cy="hw2-text">Учусь в IT-INCUBATOR, люблю играть в видеоигры и очень люблю свою кошку.Её
+      зовут Афроня,её фото
+      будет ниже</p>
+    <img class="main-image" data-cy="hw2-main-image" src="assets/img/Afronya.jpg" alt="cat">
   </section>
 
-  <section class="about-section" data-cy="hw1-section-about-pre">
-    <select>
+  <section class="about-section" data-cy="hw2-section-about-pre">
+    <select data-cy="hw2-select-pre">
       <option>Minsk</option>
       <option selected>Gomel</option>
       <option>Brest</option>
@@ -34,50 +36,56 @@
       <option> Mogilev</option>
     </select>
 
-    <div data-cy="hw1-unordered-list-box-pre">
-      <h2 class="section-title">Любимый жанр игр</h2>
-      <ul class="genre">
+    <div>
+      <h2 class="section-title" data-cy="hw2-section-title-pre">Любимыe жанры игр</h2>
+      <ul class="genre" data-cy="hw2-frameworks-list-pre">
         <li class="genre-list">Хоррор(survival)</li>
         <li class="genre-list">Интерактивные игры(как фильмы,но ты сам играешь и делаешь выборы)</li>
         <li class="genre-list">Шуттер</li>
       </ul>
     </div>
-    <div data-cy="hw1-ordered-list-box-pre">
-      <h2 class="section-title">Любимые игры</h2>
-      <ol class="fg">
+    <div>
+      <h2 class="section-title" data-cy="hw2-section-title-pre">Любимые игры</h2>
+      <ol class="fg" data-cy="hw2-books-list-pre">
         <li>Dying Light 2</li>
         <li>Far Cry 3</li>
         <li>Resident Evil 7</li>
       </ol>
     </div>
-    <div data-cy="hw1-skills-box-pre">
-      <h2 class="section-title">Мои скиллы</h2>
-      <label class="label" for="html">
-        <input id="html" type="checkbox" name="html" checked>
-        Html
+    <div>
+      <h2 class="section-title" data-cy="hw2-section-title-pre">Мои скиллы</h2>
+      <label class="label" data-cy="hw2-label-pre" for="1">
+        <input type="checkbox" checked name="html" id="1">
+        HTML
       </label>
 
-      <label class="label" for="css">
-        <input id="css" name="css" type="checkbox">
+      <label class="label" data-cy="hw2-label-pre" for="2">
+        <input type="checkbox"  name="css" id="2">
         CSS
       </label>
 
-      <label class="label" for="js">
-        <input id="js" type="checkbox" name="js">
-        JS
+      <label class="label" data-cy="hw2-label-pre" for="3">
+        <input type="checkbox" name="js" id="3">
+        JavaScript
+      </label
+
+      <label class="label" data-cy="hw2-label-pre" for="4">
+        <input type="checkbox" name="jq" id="4">
+        Jquery
       </label>
 
-      <label class="label" for="react">
-        <input id="react" type="checkbox" name="react">
+      <label class="label" data-cy="hw2-label-pre" for="5">
+        <input type="checkbox" name="react" id="5">
         React
       </label>
     </div>
 
-    <input class="text-field" type="text" placeholder="Новый скилл">
-    <button class="btn">Добавить</button>
-    <hr class="line">
+    <input class="text-field" data-cy="hw2-text-field-pre" type="text" placeholder="Новый скилл">
+    <button class="btn" data-cy="hw2-btn-pre">Добавить</button>
 
-    <table data-cy="hw-about-table-pre" border="1">
+    <hr class="line" data-cy="hw2-line-pre">
+
+    <table data-cy="hw2-about-table-pre" border="1">
       <tr>
         <th>Номер</th>
         <th>Жанр</th>
@@ -99,13 +107,14 @@
         <td>26</td>
       </tr>
       <tr>
-        <td colspan="2">Итого пройденных игр</td>
+        <td colspan="2">Итого пройденных игр:</td>
         <td>67</td>
       </tr>
     </table>
   </section>
+
   <footer data-cy="hw-footer-pre">
-    <a class="footer-link" href="https://it-incubator.io">IT-INCUBATOR</a>
+    <a class="footer-link" data-cy="hw-footer-link-pre" href="https://it-incubator.io/">it-incubator</a>
   </footer>
 </body>
 
