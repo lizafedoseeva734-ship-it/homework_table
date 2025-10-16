@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
   <title>It-incubator precourse</title>
 </head>
 
@@ -14,13 +18,13 @@
     <span>IT-INCUBATOR</span>
   </header>
 
-  <section data-cy="hw1-section-main-pre">
-    <h1>Федосеева Елизавета Леонидовна</h1>
-    <p>Учусь в IT-INCUBATOR,люблю играть в видеоигры и очень люблю свою кошку.Её зовут Афроня,её фото будет ниже</p>
-    <img src="assets/img/Afronya.jpg" alt="cat" width="300">
+  <section class="main-section" data-cy="hw1-section-main-pre">
+    <h1 class="main-title">Федосеева Елизавета Леонидовна</h1>
+    <p class="main-text">Учусь в IT-INCUBATOR, люблю играть в видеоигры и очень люблю свою кошку.Её зовут Афроня,её фото будет ниже</p>
+    <img class="main-image" src="assets/img/Afronya.jpg" alt="cat" >
   </section>
 
-  <section data-cy="hw1-section-about-pre">
+  <section class="about-section" data-cy="hw1-section-about-pre">
     <select>
       <option>Minsk</option>
       <option selected>Gomel</option>
@@ -31,47 +35,47 @@
     </select>
 
     <div data-cy="hw1-unordered-list-box-pre">
-      <h2>Любимый жанр игр</h2>
-      <ul>
-        <li>Хоррор(survival)</li>
-        <li>Интерактивные игры(как фильмы,но ты сам играешь и делаешь выборы)</li>
-        <li>Шуттер</li>
+      <h2 class="section-title">Любимый жанр игр</h2>
+      <ul class="genre">
+        <li class="genre-list">Хоррор(survival)</li>
+        <li class="genre-list">Интерактивные игры(как фильмы,но ты сам играешь и делаешь выборы)</li>
+        <li class="genre-list">Шуттер</li>
       </ul>
     </div>
     <div data-cy="hw1-ordered-list-box-pre">
-      <h2>Любимые игры</h2>
-      <ol>
+      <h2 class="section-title">Любимые игры</h2>
+      <ol class="fg">
         <li>Dying Light 2</li>
         <li>Far Cry 3</li>
         <li>Resident Evil 7</li>
       </ol>
     </div>
     <div data-cy="hw1-skills-box-pre">
-      <h2>Мои скиллы</h2>
-      <label for="html">
+      <h2 class="section-title">Мои скиллы</h2>
+      <label class="label" for="html">
         <input id="html" type="checkbox" name="html" checked>
         Html
       </label>
 
-      <label for="css">
+      <label class="label" for="css">
         <input id="css" name="css" type="checkbox">
         CSS
       </label>
 
-      <label for="js">
+      <label class="label" for="js">
         <input id="js" type="checkbox" name="js">
         JS
       </label>
 
-      <label for="react">
+      <label class="label" for="react">
         <input id="react" type="checkbox" name="react">
         React
       </label>
     </div>
 
-    <input type="text" placeholder="Новый скилл">
-    <button>Добавить</button>
-    <hr>
+    <input class="text-field" type="text" placeholder="Новый скилл">
+    <button class="btn">Добавить</button>
+    <hr class="line">
 
     <table data-cy="hw-about-table-pre" border="1">
       <tr>
@@ -101,7 +105,7 @@
     </table>
   </section>
   <footer data-cy="hw-footer-pre">
-    <a href="https://it-incubator.io/">IT-INCUBATOR</a>
+    <a class="footer-link" href="https://it-incubator.io">IT-INCUBATOR</a>
   </footer>
 </body>
 

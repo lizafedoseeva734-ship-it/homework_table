@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {font-family: "Inter", sans-serif;color: #303030;}
+
+
+
+
+header {
+    height: 70px;
+background-color: #2965f1;
+}
+
+header span {
+   font-weight: 700;
+font-size: 20px;
+color: #fff;
+display: inline-block;         
+    padding: 20px 0;
+  
+}
+
+.main-section {
+    background-color: #fafaff;
+   padding: 60px 0 60px 0;
+min-height: 1024px;
+}
+
+.main-title {
+    font-weight: 700;
+font-size: 48px;
+
+padding: 60px 0 20px 0;
+}
+
+.main-text {
+    font-weight: 400;
+font-size: 18px;
+
+}
+
+.main-image {
+     max-width: 715px;
+
+     
+}
+
+
+.about-section { 
+   background-color: #fff;
+   padding: 100px 0 100px 0;
+}
+
+select {
+width: 150px;
+height: 36px;
+margin:9px 0 8px 12 ;
+border: 1px solid rgba(48, 48, 48, 0.3);
+border-radius: 5px;
+font-weight: 400;
+font-size: 16px;
+
+background: url(assets/img/ep_arrow-down.svg) no-repeat right 12px top 50%; appearance: none;
+
+}
+
+.section-title {
+font-weight: 700;
+font-size: 24px;
+
+margin-bottom: 25px;
+}
+
+
+.genre  {
+    list-style-image: url(assets/img/solar_map-arrow-up-bold.svg); 
+padding-left: 20px;
+font-weight: 400;
+font-size: 16px;
+
+}
+
+
+.fg {
+   font-weight: 400;
+font-size: 16px;
+
+padding-left: 20px;
+}
+
+
+
+.label {
+font-weight: 400;
+font-size: 16px;
+
+}
+
+
+.text-field {
+    border: 1px solid rgba(48, 48, 48, 0.3);
+border-radius: 5px;
+width: 330px;
+background-color: rgba(255, 255, 255, 0);
+padding: 9px 0 8px 12px;
+font-family: "Inter", sans-serif;
+color: rgba(48, 48, 48, 0.2);
+}
+
+.btn {
+    border-radius: 5px;
+width: 125px;
+height: 36px;
+background: #2965f1;
+border: none;
+font-weight: 700;
+font-size: 14px;
+color: #fff;
+}
+
+.line {
+   border: 1px solid rgba(48, 48, 48, 0.3);
+width: 1440px;
+height: 0px;
+margin-top: 60px;
+margin-bottom: 60px;
+}
+
+table {
+   width: 300px;
+height: 196px;
+border: 1px solid #95a1bb;
+border-collapse: collapse;
+font-weight: 400;
+font-size: 14px;
+
+}
+
+th, td {
+   padding: 10px 0 12px 15px;
+   
+   
+
+}
+
+footer {
+   height: 70px;
+background-color: rgba(163, 167, 255, 0.3);
+padding-top: 26px;
+padding-bottom: 26px;
+}
+
+.footer-link {
+   text-decoration: none;
+   font-weight: 400;
+font-size: 14px;
+color: #2965f1;
+}
