@@ -6,115 +6,133 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>It-incubator precourse</title>
 </head>
 
-<body data-cy="hw2-body">
-  <header data-cy="hw2-header">
-    <span data-cy="hw2-header-span">IT-INCUBATOR</span>
+<body data-cy="hw3-body-pre">
+  <header data-cy="hw3-header">
+    <div class="container">
+      <span data-cy="hw3-header-span">IT-INCUBATOR</span>
+    </div>
   </header>
 
-  <section class="main-section" data-cy="hw2-section-main-pre">
-    <h1 class="main-title" data-cy="hw2-main-title">Федосеева Елизавета Леонидовна</h1>
-    <p class="main-text" data-cy="hw2-text">Учусь в IT-INCUBATOR, люблю играть в видеоигры и очень люблю свою кошку.Её
-      зовут Афроня,её фото
-      будет ниже</p>
-    <img class="main-image" data-cy="hw2-main-image" src="assets/img/Afronya.jpg" alt="cat">
+  <section class="main-section" data-cy="hw3-section-main-pre">
+    <div class="container">
+      <div class="wrapper">
+        <div class="text-wrapper" data-cy="hw3-text-wrapper-pre">
+          <h1 class="main-title" data-cy="hw3-main-title">Федосеева Елизавета Леонидовна</h1>
+          <p class="main-text" data-cy="hw3-text">Учусь в IT-INCUBATOR, люблю играть в видеоигры и очень люблю свою кошку.Её зовут Афроня,её фото будет сбоку.</p>
+        </div>
+        <img class="main-image" data-cy="hw3-main-image" src="assets/img/Afronya.jpg" alt="cat">
+      </div>
+    </div>
   </section>
 
-  <section class="about-section" data-cy="hw2-section-about-pre">
-    <select data-cy="hw2-select-pre">
-      <option>Minsk</option>
-      <option selected>Gomel</option>
-      <option>Brest</option>
-      <option> Grodno</option>
-      <option>Vitebsk</option>
-      <option> Mogilev</option>
-    </select>
+  <section class="about-section" data-cy="hw3-section-about-pre">
+    <div class="container">
+      <div class="wrapper">
+        <select data-cy="hw3-select-pre" name="" id="">
+          <option>Minsk</option>
+          <option selected>Gomel</option>
+          <option>Brest</option>
+          <option> Grodno</option>
+          <option>Vitebsk</option>
+          <option> Mogilev</option>
+        </select>
 
-    <div>
-      <h2 class="section-title" data-cy="hw2-section-title-pre">Любимыe жанры игр</h2>
-      <ul class="genre" data-cy="hw2-frameworks-list-pre">
-        <li class="genre-list">Хоррор(survival)</li>
-        <li class="genre-list">Интерактивные игры(как фильмы,но ты сам играешь и делаешь выборы)</li>
-        <li class="genre-list">Шуттер</li>
-      </ul>
+        <div class="info-wrapper" data-cy="hw3-info-wrapper-pre">
+          <div class="frameworks" data-cy="hw3-frameworks-pre">
+            <h2 class="section-title" data-cy="hw3-section-title-pre">Любимые жанры игр</h2>
+            <ul class="frameworks-list" data-cy="hw3-frameworks-list-pre">
+              <li>Хоррор</li>
+              <li>Интерактивные игры(как фильмы,но ты сам играешь и делаешь выборы)</li>
+              <li>Шуттер</li>
+            </ul>
+          </div>
+          <div class="books" data-cy="hw3-books-pre">
+            <h2 class="section-title" data-cy="hw3-section-title-pre">Любимыe игры</h2>
+            <ol class="books-list" data-cy="hw3-books-list-pre">
+              <li>Dying Light 2</li>
+              <li>Far Cry 3</li>
+              <li>Resident Evil 7</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="skills-wrapper">
+          <h2 class="section-title" data-cy="hw3-section-title-pre">Мои скиллы</h2>
+
+          <div class="skills-block" data-cy="hw3-skills-block-pre">
+            <div class="skills" data-cy="hw3-skills-pre">
+              <label class="label" data-cy="hw3-label-pre" for="1">
+                <input type="checkbox" checked name="" id="1">
+                HTML
+              </label>
+
+              <label class="label" data-cy="hw3-label-pre" for="2">
+                <input type="checkbox" checked name="" id="2">
+                CSS
+              </label>
+
+              <label class="label" data-cy="hw3-label-pre" for="3">
+                <input type="checkbox" name="" id="3">
+                JavaScript
+              </label>
+
+              <label class="label" data-cy="hw3-label-pre" for="4">
+                <input type="checkbox" name="" id="4">
+                Jquery
+              </label>
+
+              <label class="label" data-cy="hw3-label-pre" for="5">
+                <input type="checkbox" name="" id="5">
+                React
+              </label>
+            </div>
+
+            <form>
+              <input class="text-field" data-cy="hw3-text-field-pre" type="text" placeholder="Новый скилл">
+              <button class="btn" data-cy="hw3-btn-pre">Добавить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <hr class="line" data-cy="hw3-line-pre">
+
+      <table data-cy="hw3-about-table-pre" border="1">
+        <tr>
+          <th>Номер </th>
+          <th>Жанр</th>
+          <th>Количество</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Хоррор</td>
+          <td>31</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Интерактив</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Шуттер</td>
+          <td>26</td>
+        </tr>
+        <tr>
+          <td colspan="2">Итого пройденых игр:</td>
+          <td>67</td>
+        </tr>
+      </table>
     </div>
-    <div>
-      <h2 class="section-title" data-cy="hw2-section-title-pre">Любимые игры</h2>
-      <ol class="fg" data-cy="hw2-books-list-pre">
-        <li>Dying Light 2</li>
-        <li>Far Cry 3</li>
-        <li>Resident Evil 7</li>
-      </ol>
-    </div>
-    <div>
-      <h2 class="section-title" data-cy="hw2-section-title-pre">Мои скиллы</h2>
-      <label class="label" data-cy="hw2-label-pre" for="1">
-        <input type="checkbox" checked name="html" id="1">
-        HTML
-      </label>
-
-      <label class="label" data-cy="hw2-label-pre" for="2">
-        <input type="checkbox"  name="css" id="2">
-        CSS
-      </label>
-
-      <label class="label" data-cy="hw2-label-pre" for="3">
-        <input type="checkbox" name="js" id="3">
-        JavaScript
-      </label
-
-      <label class="label" data-cy="hw2-label-pre" for="4">
-        <input type="checkbox" name="jq" id="4">
-        Jquery
-      </label>
-
-      <label class="label" data-cy="hw2-label-pre" for="5">
-        <input type="checkbox" name="react" id="5">
-        React
-      </label>
-    </div>
-
-    <input class="text-field" data-cy="hw2-text-field-pre" type="text" placeholder="Новый скилл">
-    <button class="btn" data-cy="hw2-btn-pre">Добавить</button>
-
-    <hr class="line" data-cy="hw2-line-pre">
-
-    <table data-cy="hw2-about-table-pre" border="1">
-      <tr>
-        <th>Номер</th>
-        <th>Жанр</th>
-        <th>Количество</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Хоррор(survival)</td>
-        <td>31</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Интерактив</td>
-        <td>10</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Шуттер</td>
-        <td>26</td>
-      </tr>
-      <tr>
-        <td colspan="2">Итого пройденных игр:</td>
-        <td>67</td>
-      </tr>
-    </table>
   </section>
 
-  <footer data-cy="hw-footer-pre">
-    <a class="footer-link" data-cy="hw-footer-link-pre" href="https://it-incubator.io/">it-incubator</a>
+  <footer data-cy="hw3-footer-pre">
+    <a class="footer-link" data-cy="hw3-footer-link-pre" href="https://it-incubator.io/">it-incubator</a>
   </footer>
 </body>
 

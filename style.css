@@ -1,35 +1,53 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+.container {
+    outline: 1px solid red; /* чтобы контейнер был виден, в конце можно будет удалить это св-во */
+    margin: 0 auto;
+    width: 100%;
+   height: 100%;
+}
 
 body {
     font-family: "Inter", sans-serif;
     color: #303030;
 }
 
-
-
-
 header {
-    height: 70px;
-    background-color: #2965f1;
+    background-color: #2965F1;
+    padding: 23px 0;
 }
 
 header span {
     font-weight: 700;
     font-size: 20px;
     color: #fff;
-    padding: 23px 0 23px 0;
-
 }
 
 .main-section {
     background-color: #fafaff;
-    padding: 60px 0 ;
-    min-height: 1024px;
+    padding: 60px 0;
+    min-height: 100vh;
+    display: flex;
+   flex-direction:column;
+  justify-content: center;
+}
+
+.main-section .wrapper {
+    display: flex;
+  align-items: center; 
+    justify-content: flex-start;
+
+    /* 📍 Свойствa flexbox для размещения блока с текстом и изображения в ряд, и центрирования их по вертикали  */
+}
+
+.text-wrapper {
+
+    max-width: 425px;
+    /* 📍 Cвойство для ограничения ширины блока с текстом в первой секции */
 }
 
 .main-title {
@@ -47,116 +65,143 @@ header span {
     max-width: 715px;
 }
 
-
 .about-section {
     background-color: #fff;
     padding: 100px 0;
 }
 
+.about-section .wrapper {
+display: flex;
+
+    /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
+}
+
 select {
-    width: 150px;
-    height: 36px;
-    margin: 9px 0 8px 12;
     border: 1px solid rgba(48, 48, 48, 0.3);
     border-radius: 5px;
+    width: 150px;
+    padding: 8px 12px;
     font-weight: 400;
     font-size: 16px;
+    appearance: none; 
+    background-image: url("assets/img/ep_arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: right 12px top 50%;
+}
 
-    background: url(assets/img/ep_arrow-down.svg) no-repeat right 12px top 50%;
-    appearance: none;
+select:hover,
+.text-field:hover {
+    /* 📍 Стили для выпадающего списка и текстового поля при наведении курсора */
+}
 
+
+.info-wrapper {
+    display: flex;
 }
 
 .section-title {
     font-weight: 700;
     font-size: 24px;
-
     margin-bottom: 25px;
 }
 
+.frameworks,
+.books {
+    min-width: 50%;
+}
 
-.genre {
+.frameworks-list,
+.books-list {
+   
+    /* 📍 Свойства flexbox для отступов между элементами в списках */
+}
+
+.frameworks-list {
+    font-weight: 400;
+    font-size: 16px;
     list-style-image: url(assets/img/solar_map-arrow-up-bold.svg);
-    padding: 0 20px;
-    font-weight: 400;
-    font-size: 16px;
-
+    padding-left: 20px;
 }
 
-
-.fg {
-    font-weight: 400;
-    font-size: 16px;
-    padding: 0 20px;
+.skills-block {
+    /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
 }
 
+.skills {
+    /* 📍 Свойства flexbox для расположения элементов с классом .label */
+}
 
+.books-list {
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 20px;
+}
 
 .label {
     font-weight: 400;
     font-size: 16px;
-
 }
 
+form {
+    margin-bottom: 40px;
+}
 
 .text-field {
     border: 1px solid rgba(48, 48, 48, 0.3);
     border-radius: 5px;
-    width: 330px;
+    max-width: 330px;
+    width: 100%;
+    height: 36px;
     background-color: rgba(255, 255, 255, 0);
-    padding: 9px 0 8px 12px;
-    font-family: "Inter", sans-serif;
-    color: rgba(48, 48, 48, 0.2);
+    padding: 8px 12px;
+    font-weight: 400;
     font-size: 16px;
 }
 
 .btn {
+    border: none;
     border-radius: 5px;
     width: 125px;
     height: 36px;
-    background: #2965f1;
-    border: none;
+    background-color: #2965f1;
     font-weight: 700;
     font-size: 14px;
     color: #fff;
 }
 
+.btn:hover {
+    /* 📍 Стили для кнопки при наведении курсора */
+}
+
 .line {
-    border: 1px solid rgba(48, 48, 48, 0.3);
-    width: 1440px;
-    height: 0px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin: 60px 0;
 }
 
 table {
-    width: 300px;
-    height: 196px;
     border: 1px solid #95a1bb;
     border-collapse: collapse;
     font-weight: 400;
     font-size: 14px;
-
+    margin: 0 auto;
 }
 
-th,
-td {
+th, td {
     padding: 12px 15px;
-
-
-
 }
 
 footer {
-    height: 70px;
     background-color: rgba(163, 167, 255, 0.3);
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding: 26px 0;
+    /* 📍 Свойство для расположения ссылки горизонтально по центру */
 }
 
 .footer-link {
-    text-decoration: none;
     font-weight: 400;
     font-size: 14px;
     color: #2965f1;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    /* 📍 Стили для ссылки при наведении курсора */
 }
